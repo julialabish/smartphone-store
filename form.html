@@ -10,9 +10,9 @@
 
 <body>
     <h3>Smartphone order</h3>
-    <form method="POST" action="form.html">
+    <form method="POST" action="https://formspree.io/julia.yeliseeva@gmail.com">
         <label>You want to buy:
-        <select name="smartphones">
+        <select name="smartphone-model">
             <option value="iphone8">Iphone 8</option>
             <option value="iphone8plus">Iphone 8+</option>
             <option value="iphoneX">Iphone X</option>
@@ -39,13 +39,13 @@
         <label>Choose accessories:</label>
         <br>
         <label>
-            <input type="checkbox" name="smartphone-accessories" >
-            Case 
+            <input type="checkbox" name="smartphone-accessories" 
+            <option value="case">Case</option> 
         </label>
         <br>
         <label>
-            <input type="checkbox" name="smartphone-accessories" >
-            Power Bank 
+            <input type="checkbox" name="smartphone-accessories"
+            <option value="powerbank">Power Bank</option>
         </label>
         <br>
         <label for="client-name">First Name:</label>
@@ -56,7 +56,7 @@
         </label>
         <br>
         <label>Phone Number:
-        <input type="tel" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" name="client-phone-number" placeholder="Phone Number" required>   
+        <input type="tel" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" title="111 111 1111" name="client-phone-number" placeholder="Phone Number" required>   
         </label>
         <br>
         <label>Email:
