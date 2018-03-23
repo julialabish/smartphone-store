@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smartphone order</title>
+</head>
+
+<body>
+    <h3>Smartphone order</h3>
+    <form method="POST" action="form.html">
+        <label>You want to buy:
+        <select name="smartphones">
+            <option value="iphone8">Iphone 8</option>
+            <option value="iphone8plus">Iphone 8+</option>
+            <option value="iphoneX">Iphone X</option>
+            <option value="sga8">Samsung Galaxy A8</option>
+            <option value="sgj7">Samsung Galaxy J7</option>
+            <option value="sgs8">Samsung Galaxy S8</option>
+        </select>
+        </label>
+        <br>
+        <label>Choose memory:</label>
+        <br>
+        <label>
+            <input type="radio" name="smartphone-memory" value="64" checked>64
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="smartphone-memory" value="128">128
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="smartphone-memory" value="256">256
+        </label>
+        <br>
+        <label>Choose accessories:</label>
+        <br>
+        <label>
+            <input type="checkbox" name="smartphone-accessories" >
+            Case 
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="smartphone-accessories" >
+            Power Bank 
+        </label>
+        <br>
+        <label for="client-name">First Name:</label>
+        <input type="text" name="client-name" placeholder="First Name" id="client-name" required>
+        <br>
+        <label>Second Name:
+        <input type="text" name="client-second-name" placeholder="Second Name" required>
+        </label>
+        <br>
+        <label>Phone Number:
+        <input type="tel" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" name="client-phone-number" placeholder="Phone Number" required>   
+        </label>
+        <br>
+        <label>Email:
+        <input type="email" name="client-email" placeholder="Email" required>  
+        </label>
+        <br>
+        <label>
+        <textarea name="client-comment" placeholder="Your comment" required></textarea>  
+        </label>
+        <br>
+        <input type="submit" value="Order">
+
+
+    </form>
+
+</body>
+
+</html>
